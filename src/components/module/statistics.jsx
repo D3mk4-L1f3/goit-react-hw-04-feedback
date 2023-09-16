@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 
+import { ListStyle } from 'components/module-style/statistics.styled';
+
 export default function Statistics({
   good,
   neutral,
@@ -8,13 +10,13 @@ export default function Statistics({
   positivePercentage,
 }) {
   return (
-    <ul>
+    <ListStyle>
       <li>Good: {good}</li>
       <li>Neutral: {neutral}</li>
       <li>Bad: {bad}</li>
       <li>Total: {total}</li>
       <li>Positive feedback: {positivePercentage}%</li>
-    </ul>
+    </ListStyle>
   );
 }
 

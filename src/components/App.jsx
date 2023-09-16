@@ -4,6 +4,8 @@ import Statistics from './module/statistics';
 import Section from './module/section';
 import Notification from './module/notification';
 
+import { MainAppStyle } from './module-style/app.styled';
+
 export default function App() {
   const [feedback, setFeedback] = useState({
     good: 0,
@@ -31,7 +33,7 @@ export default function App() {
   const total = countTotalFeedback();
 
   return (
-    <>
+    <MainAppStyle>
       <Section title="Please leave feedback">
         <FeedbackOption
           options={Object.keys(feedback)}
@@ -51,6 +53,6 @@ export default function App() {
           <Notification message="There is no feedback" />
         )}
       </Section>
-    </>
+    </MainAppStyle>
   );
 }

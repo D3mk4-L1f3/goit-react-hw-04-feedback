@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
 
+import { SectionStyle } from 'components/module-style/section.styled';
+
 export default function Section({ title, children }) {
   return (
-    <div>
-      <h2>{title}</h2>
+    <SectionStyle>
+      <h1>{title}</h1>
       {children}
-    </div>
+    </SectionStyle>
   );
 }
 
