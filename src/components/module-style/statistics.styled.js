@@ -5,5 +5,4 @@ export const ListStyle = styled.ul`
     flex-direction: column;
     align-items: flex-end;
     gap: 15px;
-}
 `;
